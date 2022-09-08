@@ -1,18 +1,22 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <TopNav></TopNav>
+  <SwiperTop></SwiperTop>
+  <IconList></IconList>
+  <MusicList></MusicList>
 </template>
-
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
-
+import TopNav from '@/components/home/TopNav.vue'
+import SwiperTop from '@/components/home/SwiperTop.vue'
+import IconList from '@/components/home/IconList.vue'
+import MusicList from '@/components/home/MusicList.vue'
 export default {
   name: 'HomeView',
   components: {
-    HelloWorld
+    TopNav,
+    SwiperTop,
+    IconList,
+    MusicList,
   }
 }
 </script>
+<style lang="less"></style>
